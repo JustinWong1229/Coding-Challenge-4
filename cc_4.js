@@ -3,12 +3,37 @@
 let products = [
     {Name: "T-shirt", Category: "apparel", Price: 15.00, Inventory: 18},
     {Name: "Apple", Category: "groceries", Price: 2.00, Inventory: 25},
-    {Name: "Table", Category: "household", Price: 25.00, Inventory: 8},
+    {Name: "Table", Category: "furniture", Price: 25.00, Inventory: 8},
     {Name: "Computer", Category: "electronic", Price: 500.00, Inventory: 2},
     {Name: "Bleach", Category: "household", Price: 12.00, Inventory: 7}
 
 ];
-console.log(products);
 
 // Step 3: Applying a dynamic discount
+console.log(products);
+for(let product of products) {
+    let discount = 0;
+
+    switch (product.Category) {
+        case "electronic":
+            discount = 0.20;
+            break;
+        case "apparel":
+            discount = 0.15;
+            break;
+        case "household":
+        case "groceries":
+            discount = 0.10;
+            break;
+        default:
+            discount = 0;
+    }
+        
+                        
+    let promoPrice = product.Price - (product.Price * discount);
+    product.promoPrice = promoPrice;
+    
+}
+// Step 4 : Customer Types
+const customerType =["regular", "student", "senior"];
 
