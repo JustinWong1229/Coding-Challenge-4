@@ -35,9 +35,21 @@ for(let product of products) {
     
 }
 // Step 4 : Customer Types
-const customerType = ["regular", "student", "senior"]
+let customerType = "regular"
 let extraDiscount = 0;
 if (customerType === "student") {extraDiscount = 0.05;}
 else if (customerType === "senior") {extraDiscount = 0.07;}
 else {extraDiscount = 0;}
+
+// Step 5: Checkout Process and Inventory
+for (let index = 0; index < 3; index++) {
+    let subTotal = 0
+    for (const product of products) {
+
+        (item.Inventory--)
+    }
+    let finalTotal = subTotal * (1 - extraDiscount);
+console.log(`Customer ${i}: $${finalTotal.toFixed(2)}`);
+}
+
 
