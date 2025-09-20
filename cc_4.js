@@ -35,5 +35,9 @@ for(let product of products) {
     
 }
 // Step 4 : Customer Types
-const customerType =["regular", "student", "senior"];
+const customerType = ["regular", "student", "senior"]
+let extraDiscount = 0;
+if (customerType === "student") {extraDiscount = 0.05;}
+else if (customerType === "senior") {extraDiscount = 0.07;}
+else {extraDiscount = 0;}
 
