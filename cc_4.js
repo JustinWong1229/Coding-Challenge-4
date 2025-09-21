@@ -53,5 +53,10 @@ for (let index = 0; index < 3; index++) {
     let finalTotal = subTotal * (1 - extraDiscount);
 console.log(`Customer ${index}: $${finalTotal.toFixed(2)}`);
 }
-
+// Step 6: Inspecting Products
+let oneProduct = products[2]
+for (const key in oneProduct) {
+    console.log(`Product's ${key} is ${oneProduct[key]}.`);
+    
+}
 
