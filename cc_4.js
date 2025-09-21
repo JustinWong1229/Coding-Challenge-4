@@ -60,3 +60,6 @@ for (const key in oneProduct) {
     
 }
 
+// Step 7: Logging Products
+Object.entries(products);
+
