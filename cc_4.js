@@ -43,7 +43,7 @@ else {extraDiscount = 0;}
 
 // Step 5: Checkout Process and Inventory
 
-for (let index = 0; index < 3; index++) {
+for (let index = 1; index < 4; index++) {
     let subTotal = 0
     for (const product of products) {
         subTotal = subTotal + product.promoPrice;
@@ -62,4 +62,5 @@ for (const key in oneProduct) {
 
 // Step 7: Logging Products
 Object.entries(products);
+console.log(products);
 
